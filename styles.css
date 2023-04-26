@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed&display=swap');
+
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: #ECE8DD;
+    overflow: hidden;
+}
+
+h1{
+    font-size: 50px;
+    left: 30px;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    position: absolute;
+}
+
+#cell{
+    margin-right: 500px;
+    animation: wobble 20s ease-in-out;
+    animation-iteration-count: infinite;
+    position: relative;
+    border: 2px solid black;
+    background: rgb(160,184,255);
+    background: radial-gradient(circle, rgba(160,184,255,1) 0%, rgba(114,122,151,1) 100%);
+    border-radius: 50%;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    box-shadow: 10px 10px 5px lightgray;
+}
+#outer{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#cell-con{
+    position: absolute;
+    top: 50%;
+    transform: translate(-250px,-50%);
+    width: 10000px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#line-con{
+    z-index: 10;
+    position: absolute;
+    animation: wobble 40s ease-in-out;
+    animation-iteration-count: infinite;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#metaline-con{
+    
+    z-index: 10;
+    position: absolute;
+    animation: wobble 40s ease-in-out;
+    animation-iteration-count: infinite;
+    
+
+}
+
+#metaline{
+    user-select: none;
+    width: 490px;
+    top: 50%;
+    left: 50%;
+    transition: 0.2s;
+    transform: translate(0%,10%);
+}
+#metacromo1:hover{
+    width: 150px;
+}    
+#metaline:hover{
+    width: 510px;
+    transform: translate(-2%,10%);
+
+}
+#metacromo1{
+    z-index: 100;
+    rotate: 90deg;
+    position: absolute;
+    left: 35%;
+    top: 59%;
+    opacity: 1;
+    user-select: none;
+    width: 140px;
+    animation: wobble 20s ease-in-out;
+    animation: crot 20s ease-in-out;
+    animation-iteration-count: infinite;
+    transition: 0.2s;
+
+} 
+#metacromo2{
+    z-index: 100;
+    opacity: 1;
+    position: absolute;
+    left: 34%;
+    top: 14%;
+    user-select: none;
+    rotate: -90deg;
+    width: 150px;
+    animation: wobble 20s ease-in-out;
+    animation: crot 20s ease-in-out;
+    animation-iteration-count: infinite;
+    transition: 0.2s;
+      
+}
+#metacromo2:hover{
+    width: 160px;
+}  
+
+
+#anachromo2{
+    z-index: 100;
+    opacity: 1;
+    position: absolute;
+    rotate: -90deg;
+    left: 30%;
+    top: 17%;
+    user-select: none;
+    width: 250px;
+    animation: wobble 20s ease-in-out;
+    animation: crot 20s ease-in-out;
+    animation-iteration-count: infinite;
+    transition: 0.2s;
+}  
+#anachromo1{
+    z-index: 100;
+    opacity: 1;
+    position: absolute;
+    rotate: 90deg;
+    left: 30%;
+    top: 34%;
+    user-select: none;
+    width: 250px;
+    animation: wobble 20s ease-in-out;
+    animation: crot 20s ease-in-out;
+    animation-iteration-count: infinite;
+    transition: 0.2s;
+}
+
+#ovalcell{
+    margin-right: 500px;
+    animation: wobble 20s ease-in-out;
+    animation-iteration-count: infinite;
+    position: relative;
+    border: 2px solid black;
+    background: rgb(160,184,255);
+    background: radial-gradient(circle, rgba(160,184,255,1) 0%, rgba(114,122,151,1) 100%);
+
+    border-radius: 50%;
+    left: -100px;
+
+    text-align: center;
+    width: 700px;
+    height: 500px;
+    box-shadow: 10px 10px 5px lightgray;
+}
+#line{
+    user-select: none;
+    position: absolute;
+    width: 300px;
+    transform: translate(-50%,-45%);
+    transition: 0.2s;
+}
+
+#line-info{
+    position: absolute;
+    opacity: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 10px;
+    transform: translate(-50%,50%);
+    transition: opacity 100ms linear;
+}
+
+
+#crossing-info1{
+    width: 180px;
+    position: absolute;
+    opacity: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 10px;
+    top: 50px;
+    left: -40px;
+    transition: opacity 100ms linear;
+}
+
+#crossing-info2{
+    width: 180px;
+    position: absolute;
+    opacity: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 10px;
+    top: 50px;
+    left: -40px;
+    transition: opacity 100ms linear;
+}
+
+#line-con:hover > #line-info{
+    opacity: 1;
+}
+
+#line:hover{
+    width: 320px;
+}
+#pc1-con:hover > #crossing-info1{
+    opacity: 1;
+}
+#pc2-con:hover > #crossing-info2{
+    opacity: 1;
+}
+
+#metaline-info{
+    position: absolute;
+    opacity: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 10px;
+    transform: translate(20%,-50%);
+    transition: opacity 100ms linear;
+}
+#metaline-con:hover > #metaline-info{
+    opacity: 1;
+
+}
+
+#pc1-con{
+    position: absolute;
+    height: 80px;
+    width: 100px;
+    top: 20%;
+    left: 5%;
+}
+#pc2-con{
+    position: absolute;
+    height: 80px;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+}
+
+.c{
+    opacity: 1;
+    user-select: none;
+    position: absolute;
+    animation: wobble 20s ease-in-out;
+    animation: crot 20s ease-in-out;
+    animation-iteration-count: infinite;
+    transition: 0.2s;
+}
+.c:hover{
+    width: 35px;
+}
+
+#pc1{
+    position: absolute;
+    width: 110px;
+    left: 0px;
+    top: -15px;
+}
+#pc1:hover{
+    width: 120px;
+}
+#pc2:hover{
+    width: 120px;
+}
+#pc2{
+    position: absolute;
+    width: 110px;
+    left: 0px;
+    top: -15px;
+}
+#c1{
+    top: 20%;
+    left: 20%;
+
+}#c2{
+    top: 30%;
+    left: 20%;
+
+
+}#c3{
+    right: 30%;
+    top: 50%;
+
+}#c4{
+    right: 20%;
+    top: 58%;
+}
+
+#rb{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 60px;
+    height: 100px;
+    right: 0;
+    text-align: center;
+    font-weight: 200;
+    z-index: 10;
+    line-height: 100px;
+    user-select: none;
+
+}
+
+
+#lb{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 60px;
+    height: 100px;
+    left: 0;
+    text-align: center;
+    z-index: 10;
+    line-height: 100px;
+    user-select: none;
+
+
+}
+
+@keyframes rotate {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+#kernel {
+    position: absolute;
+    opacity: 1;
+    border: 3px dotted black;
+    background: rgb(247,231,241);
+    background: radial-gradient(circle, rgba(247,231,241,1) 0%, rgba(193,193,219,1) 100%);
+    border-radius: 300px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@keyframes crot{
+    0% {transform: rotate(90deg);}
+    25% {transform: rotate(100deg);}
+    50% {transform: rotate(90deg);}
+    75% {transform: rotate(80deg);}
+    100% {transform: rotate(90deg);}
+}
+
+@keyframes wobble{
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, 1px) rotate(0deg); }
+}
+
+
+#telocell-con{
+    margin-right: 500px;
+    animation: wobble 20s ease-in-out;
+    animation-iteration-count: infinite;
+    position: relative;
+    left: -205px;
+    width: 500px;
+    height: 500px;
+}
+#telocell1{
+    position: absolute;
+    border: 2px solid black;
+    transform: translate(-35%,0%);
+    background: rgb(160,184,255);
+    background: radial-gradient(circle, rgba(160,184,255,1) 0%, rgba(114,122,151,1) 100%);
+    border-radius: 50%;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    box-shadow: 10px 10px 5px lightgray;
+}
+#telocell2{
+    position: absolute;
+    border: 2px solid black;
+    transform: translate(35%,0%);
+    background: rgb(160,184,255);
+    background: radial-gradient(circle, rgba(160,184,255,1) 0%, rgba(114,122,151,1) 100%);
+    border-radius: 50%;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    box-shadow: 10px 10px 5px lightgray;
+}
+
+#desc-con{
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    transform: translate(-250px,275px);
+    width: 10000px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+.desc{
+    margin-right: 500px;
+    position: relative;
+    border: 2px solid black;
+    background: rgb(160,184,255);
+    background: radial-gradient(circle, rgba(160,184,255,1) 0%, rgba(114,122,151,1) 100%);
+    border-radius: 10px;
+    text-align: center;
+    width: 500px;
+    height: 100%;
+    box-shadow: 10px 10px 5px lightgray;
+}
+
+#anaspindle1{
+    z-index: 100;
+    opacity: 1;
+    position: absolute;
+    left: 0%;
+    top: 27%;
+    user-select: none;
+    rotate: -90deg;
+    width: 300px;
+    animation: wobble 20s ease-in-out;
+    animation: crot 20s ease-in-out;
+    animation-iteration-count: infinite;
+    transition: 0.2s;
+      
+}
+#anaspindle1:hover{
+    width: 200px;
+}
+#interchromo{
+    width: 300px;
+}
+#interspindle1{
+    width: 100px;
+    position: absolute;
+    transform: translate(-60%,10%);
+}
+#interspindle2{
+    width: 100px;
+    position: absolute;
+    transform: translate(0%,10%);
+
+}
+#telopink1{
+    position: absolute;
+    border: 2px solid rgb(0, 0, 0);
+    transform: translate(-35%,0%);
+    background: rgb(255, 74, 231);
+    background: radial-gradient(circle, #FBECF3 0%, #E9C7DF 100%);
+    border-radius: 50%;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    top: 22%;
+    left: 5%;
+    z-index: 101;
+}
+#telopink2{
+    position: absolute;
+    border: 2px solid rgb(0, 0, 0);
+    transform: translate(-35%,0%);
+    background: rgb(255, 74, 231);
+    background: radial-gradient(circle, #FBECF3 0%, #E9C7DF 100%);
+    border-radius: 50%;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    top: 22%;
+    left: 75%;
+    z-index: 101;
+}
