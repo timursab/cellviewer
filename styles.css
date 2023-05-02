@@ -145,7 +145,7 @@ h1{
 }
 
 #ovalcell{
-    margin-right: 500px;
+    margin-right: 300px;
 /*     animation: wobble 20s ease-in-out;
     animation-iteration-count: infinite; */
     position: relative;
@@ -397,7 +397,6 @@ h1{
     animation: wobble 20s ease-in-out;
     animation-iteration-count: infinite;
     position: relative;
-    left: -205px;
     width: 500px;
     height: 500px;
 }
@@ -565,4 +564,11 @@ h1{
 h2{
     padding: 0;
     margin: 0;
+}
+#text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 60px;
 }

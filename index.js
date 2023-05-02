@@ -14,25 +14,10 @@ const cellCon = document.getElementById('cell-con')
 const rb = document.getElementById('rb')
 const lb = document.getElementById('lb')
 let target = -250
-/* cellCon.style.transform = `translate(${target}px,-50%)` */
 
-/* rb.addEventListener('click',()=>{
-    target -= 1000
-    console.log(target)
-    cellCon.animate({transform: `translate(${target}px,-50%)`},{duration:500,fill:"both"})
-    descCon.animate({transform: `translate(${target}px,275px)`},{duration:500,fill:"both"})
-})
-lb.addEventListener('click',()=>{
-    target += 1000
-    console.log(target)
-
-    cellCon.animate({transform: `translate(${target}px,-50%)`},{duration:500,fill:"both"})
-    descCon.animate({transform: `translate(${target}px,275px)`},{duration:500,fill:"both"})
-
-}) */
 
 rb.addEventListener('click',()=>{
-    if(target == -4250)return
+    if(target == -5250)return
 
     target -= 1000
 })
@@ -42,7 +27,7 @@ lb.addEventListener('click',()=>{
 })
 addEventListener('keydown',(e)=>{
     if(e.code=='ArrowRight'){
-        if(target == -4250)return
+        if(target == -5250)return
         target -= 1000
     }
     if(e.code=='ArrowLeft'){
@@ -52,9 +37,16 @@ addEventListener('keydown',(e)=>{
 })
 
 let current = target
+
+prevTime = performance.now()
+deltaTime = 0
+
 const loop = ()=>{
+    const currentTime = performance.now()
+    deltaTime = (currentTime - this.prevTime)/1000
+    prevTime = currentTime
     requestAnimationFrame(loop)
-    current = lerp(current,target,0.03)
+    current = lerp(current,target,deltaTime*3.5)
     cellCon.style.transform = `translate(${current}px,-50%)`
     descCon.style.transform = `translate(${current}px,275px)`
 }
