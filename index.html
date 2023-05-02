@@ -9,19 +9,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Mayoz Evreleri</title>
 </head>
 <body>
-    <h1>Biology Project</h1>
+    <h1>Mayoz Evreleri</h1>
     <div id="rb">
-        <span class="material-symbols-rounded">
+        <span class="material-symbols-rounded" id="ar">
             arrow_forward_ios
-            </span>
+        </span>
     </div>
     <div id="lb">
-        <span class="material-symbols-rounded">
+        <span class="material-symbols-rounded" id="al">
             arrow_back_ios
-            </span>
+        </span>
     </div>
     <div id="outer">
         <div id="cell-con">
@@ -35,23 +35,23 @@
             <div id="cell">
                 <div id="line-con">
                     <img src="line.svg" id="line">
-                    <div id="line-info">INFORMATION ABOUT SPINDLE APPARATUS!!!</div>
+                    <div id="line-info">İğ iplikleri</div>
                 </div>
                 <div id="kernel">
                     <div id="pc1-con">
                         <img src="./crossingOver.svg" id="pc1" class="c">
-                        <div id="crossing-info1">INFORMATION ABOUT KROMOZOM!!!</div>
+                        <div id="crossing-info1">Kromozomlar</div>
                     </div>
                     <div id="pc2-con">
                         <img src="./crossingOver.svg" id="pc2" class="c">
-                        <div id="crossing-info2">INFORMATION ABOUT KROMOZOM!!!</div>
+                        <div id="crossing-info2">Kromozomlar</div>
                     </div>
                 </div>
             </div>
             <div id="cell">
                 <div id="metaline-con">
                     <img src="./metaspindle.svg" id="metaline">
-                    <div id="metaline-info">INFORMATION ABOUT SPINDLE APPARATUS!!!</div>
+                    <div id="metaline-info">İğ iplikleri</div>
                 </div>
                 <div>
                     <img src="./metacromo.svg" id="metacromo1">
@@ -60,12 +60,13 @@
                     <img src="./metacromo.svg" id="metacromo2">
                 </div>
             </div>
+            <!-- Anafaz -->
             <div id="ovalcell">
-                <div id="analine-con">
-
-                </div>
                 <div >
                     <img src="./assets/anaspindle.svg" id="anaspindle1">
+                </div>
+                <div >
+                    <img src="./assets/anaspindle.svg" id="anaspindle2">
                 </div>
                 <div>
                     <img src="./anachromo.svg" id="anachromo1">
@@ -76,10 +77,15 @@
             </div>
             
             <div id="telocell-con">
-                <div id="telopink1"></div>
-                <div id="telopink2"></div>
-                <div id="telocell1"> </div>
+                <div id="telocell1">
+                    <div id="telopink1"></div>
+                    <img src="./assets/telochromo.svg" id="telochromo1">
+                    <img src="assets/telospindle.svg" id="interspindle1">
+                </div>
                 <div id="telocell2">
+                    <div id="telopink2"></div>
+                    <img src="./assets/telochromo.svg" id="telochromo2">
+                    <img src="assets/telospindle.svg" id="interspindle2">
 
                 </div>
             </div>
@@ -87,20 +93,29 @@
         </div>
         <div id="desc-con">
             <div class="desc">
-                InterfazMayoz bölünme de mitoz bölünmedeki gibi interfaz olarak adlandırılan evreden sonra başlar. İnterfaz evresinde, hücre bölünmeye hazırlanır. Bu evrede hücrenin hacmi büyür; organeller, DNA ve sentrozom kopyalanır. 
+                <h2>Interfaz</h2>
+                Mayoz bölünme interfaz olarak adlandırılan evreden sonra başlar. İnterfaz evresinde, hücre bölünmeye hazırlanır. Bu evrede hücrenin hacmi büyür; organeller, DNA ve sentrozom kopyalanır. 
             </div>
             <div class="desc">
-                Profaz-1 evresinde, aynı mitoz bölünmenin profaz evresindeki gibi, DNA’nın proteinlerle oluşturduğu yapı olarak adlandırılan kromatin yoğunlaşarak kıvrılır ve giderek daha sıkı hâle gelir. Sıkılaştıkça kısalan ve kalınlaşan kromatinler mikroskop aracılığıyla görülebilen X şeklindeki kromozomları oluşturur. Kopyalanan kromozomlar kardeş kromatit olarak adlandırılır. Kardeş kromatitler, özdeş DNA çiftleridir ve sentromer adı verilen bir noktada birleşir. Profaz-1 evresinde, mitoz bölünmedeki profaz evresinden farklı olarak, kromozomlar ikili çiftler hâlinde eşleşir. Bu çiftlere homolog kromozomlar denir.
+                <h2>Profaz 1</h2>
+
+                Profaz-1 evresinde, DNA’nın proteinlerle oluşturduğu yapı olarak adlandırılan kromatin yoğunlaşarak kıvrılır ve giderek daha sıkı hâle gelir. Sıkılaştıkça kısalan ve kalınlaşan kromatinler  X şeklindeki kromozomları oluşturur. Kopyalanan kromozomlar kardeş kromatit olarak adlandırılır. Kardeş kromatitler, özdeş DNA çiftleridir ve sentromer adı verilen bir noktada birleşir. Profaz-1 evresinde, kromozomlar ikili çiftler hâlinde eşleşir. Bu çiftlere homolog kromozomlar denir.
 
             </div>
             <div class="desc">
-                Metafaz Metafaz-1 evresinde, mikrotübüllerin oluşturduğu iğ ipliklerine bağlı homolog kromozomlar hücrenin ortasına dizilir. Bu dizilim rastgele olur. Örneğin büyük mor kromozom ve küçük turuncu kromozom aynı kutba doğru dizilebilir ya da hem büyük hem de küçük mor kromozom aynı kutba doğru dizilebilir. Bu durum farklı eşey hücrelerinin farklı kromozom kombinasyonlarına sahip olmasını sağlar. Böylece mayoz bölünmenin ikinci genetik çeşitliliği bu evrede gerçekleşir.
+                <h2>Metafaz 1</h2>
+
+                Mikrotübüllerin oluşturduğu iğ ipliklerine bağlı homolog kromozomlar hücrenin ortasına dizilir. Bu dizilim rastgele olur. Örneğin büyük mor kromozom ve küçük turuncu kromozom aynı kutba doğru dizilebilir ya da hem büyük hem de küçük mor kromozom aynı kutba doğru dizilebilir. Bu durum farklı eşey hücrelerinin farklı kromozom kombinasyonlarına sahip olmasını sağlar. Mayoz bölünmenin ikinci genetik çeşitliliği bu evrede gerçekleşir.
             </div>
             <div class="desc">
-                Anafaz Anafaz-1 evresinde, hücrenin ortasına dizilen homolog kromozomlar iğ iplikleri tarafından zıt kutuplara çekilir. Bu sırada kardeş kromatitler birbirinden ayrılmaz.
+                <h2>Anafaz 1</h2>
+
+               Hücrenin ortasına dizilen homolog kromozomlar iğ iplikleri tarafından zıt kutuplara çekilir. Bu sırada kardeş kromatitler birbirinden ayrılmaz.
             </div>
             <div class="desc">
-                TelofazTelofaz-1 evresi, homolog kromozomların kutuplara doğru çekilmesinin tamamlanması ile başlar. Bazı canlılarda çekirdek zarı bu evrede yeniden oluşur. Kromozomlar da yeniden çözülür. Bu evrede çekirdek zarı oluştuktan sonra hücre sitoplazmasının bölündüğü aşama olarak bilinen sitokinez başlar. Diğer canlılarda ise bu aşamalar atlanarak doğrudan mayoz-2 bölünmesine geçilir.
+                <h2>Telofaz 1</h2>
+
+                Homolog kromozomların kutuplara doğru çekilmesinin tamamlanması ile başlar. Bazı canlılarda çekirdek zarı bu evrede yeniden oluşur. Kromozomlar da yeniden çözülür. Bu evrede çekirdek zarı oluştuktan sonra hücre sitoplazmasının bölündüğü aşama olarak bilinen sitokinez başlar. Diğer canlılarda ise bu aşamalar atlanarak doğrudan mayoz-2 bölünmesine geçilir.
             </div>
         </div>
     </div>

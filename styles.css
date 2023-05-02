@@ -121,13 +121,12 @@ h1{
     z-index: 100;
     opacity: 1;
     position: absolute;
-    rotate: -90deg;
     left: 30%;
     top: 17%;
     user-select: none;
     width: 250px;
     animation: wobble 20s ease-in-out;
-    animation: crot 20s ease-in-out;
+/*     animation: crot 20s ease-in-out; */
     animation-iteration-count: infinite;
     transition: 0.2s;
 }  
@@ -135,21 +134,20 @@ h1{
     z-index: 100;
     opacity: 1;
     position: absolute;
-    rotate: 90deg;
     left: 30%;
-    top: 34%;
+    bottom: -15%;
     user-select: none;
     width: 250px;
     animation: wobble 20s ease-in-out;
-    animation: crot 20s ease-in-out;
+/*     animation: crot 20s ease-in-out; */
     animation-iteration-count: infinite;
     transition: 0.2s;
 }
 
 #ovalcell{
     margin-right: 500px;
-    animation: wobble 20s ease-in-out;
-    animation-iteration-count: infinite;
+/*     animation: wobble 20s ease-in-out;
+    animation-iteration-count: infinite; */
     position: relative;
     border: 2px solid black;
     background: rgb(160,184,255);
@@ -303,21 +301,33 @@ h1{
 }
 
 #rb{
+
     position: absolute;
     top: 50%;
     transform: translate(0,-50%);
     background-color: rgba(0, 0, 0, 0.3);
     width: 60px;
     height: 100px;
-    right: 0;
+    right: 0px;
     text-align: center;
-    font-weight: 200;
     z-index: 10;
-    line-height: 100px;
+    line-height: 110px;
     user-select: none;
-
 }
-
+#ar{
+    transition-duration: 200ms;
+}
+#rb:hover #ar{
+    font-size: 40px;
+    transform: translate(0,20%);
+}
+#al{
+    transition-duration: 200ms;
+}
+#lb:hover #al{
+    font-size: 40px;
+    transform: translate(0,20%);
+}
 
 #lb{
     position: absolute;
@@ -326,10 +336,10 @@ h1{
     background-color: rgba(0, 0, 0, 0.3);
     width: 60px;
     height: 100px;
-    left: 0;
+    left: 0px;
     text-align: center;
     z-index: 10;
-    line-height: 100px;
+    line-height: 110px;
     user-select: none;
 
 
@@ -418,7 +428,7 @@ h1{
 
 #desc-con{
     width: 100px;
-    height: 150px;
+    height: 200px;
     position: absolute;
     transform: translate(-250px,275px);
     width: 10000px;
@@ -428,10 +438,11 @@ h1{
     flex-direction: row;
 }
 .desc{
+    font-size: large;
     margin-right: 500px;
     position: relative;
     border: 2px solid black;
-    background: rgb(160,184,255);
+    background: #D9ACEE;
     background: radial-gradient(circle, rgba(160,184,255,1) 0%, rgba(114,122,151,1) 100%);
     border-radius: 10px;
     text-align: center;
@@ -445,37 +456,69 @@ h1{
     opacity: 1;
     position: absolute;
     left: 0%;
-    top: 27%;
+    top: 120px;
     user-select: none;
-    rotate: -90deg;
-    width: 300px;
+    width: 330px;
     animation: wobble 20s ease-in-out;
-    animation: crot 20s ease-in-out;
     animation-iteration-count: infinite;
     transition: 0.2s;
-      
 }
 #anaspindle1:hover{
-    width: 200px;
+    width: 350px;
+}
+#anaspindle2:hover{
+    width: 350px;
 }
 #interchromo{
-    width: 300px;
+    width: 280px;
+    position: absolute;
+    left: 15px;
+    top: 7px;
+    transition-duration: 200ms;
 }
+#interchromo:hover{
+    width: 300px;
+    left: 4px;
+    top: 0px;
+}
+#anaspindle2{
+    z-index: 100;
+    opacity: 1;
+    position: absolute;
+    right: 0px;
+    top: 120px;
+    rotate: 180deg;
+    user-select: none;
+    width: 330px;
+    animation: wobble 20s ease-in-out;
+    animation-iteration-count: infinite;
+    transition: 0.2s;
+}
+
+
 #interspindle1{
     width: 100px;
     position: absolute;
     transform: translate(-60%,10%);
+    transition-duration: 200ms;
+}
+#interspindle1:hover{
+    width: 110px;
+}
+#interspindle2:hover{
+    width: 110px;
 }
 #interspindle2{
     width: 100px;
     position: absolute;
     transform: translate(0%,10%);
+    transition-duration: 200ms;
 
 }
 #telopink1{
     position: absolute;
     border: 2px solid rgb(0, 0, 0);
-    transform: translate(-35%,0%);
+    transform: translate(30%,0%);
     background: rgb(255, 74, 231);
     background: radial-gradient(circle, #FBECF3 0%, #E9C7DF 100%);
     border-radius: 50%;
@@ -484,12 +527,12 @@ h1{
     height: 300px;
     top: 22%;
     left: 5%;
-    z-index: 101;
+    z-index: 300;
 }
 #telopink2{
     position: absolute;
     border: 2px solid rgb(0, 0, 0);
-    transform: translate(-35%,0%);
+    transform: translate(-90%,0%);
     background: rgb(255, 74, 231);
     background: radial-gradient(circle, #FBECF3 0%, #E9C7DF 100%);
     border-radius: 50%;
@@ -498,5 +541,28 @@ h1{
     height: 300px;
     top: 22%;
     left: 75%;
-    z-index: 101;
+    z-index: 15;
+}
+#telochromo1{
+    position: absolute;
+    transform: translate(-35%,22%);
+    text-align: center;
+    width: 200px;
+    top: 22%;
+    left: 45%;
+    z-index: 300;
+}
+#telochromo2{
+    position: absolute;
+    transform: translate(-35%,22%);
+    text-align: center;
+    width: 200px;
+    top: 22%;
+    left: 45%;
+    z-index: 200;
+}
+
+h2{
+    padding: 0;
+    margin: 0;
 }
