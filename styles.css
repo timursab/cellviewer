@@ -394,7 +394,7 @@ h1{
 
 #telocell-con{
     margin-right: 500px;
-    animation: wobble 20s ease-in-out;
+    animation: wobble 50s ease-in-out;
     animation-iteration-count: infinite;
     position: relative;
     width: 500px;
@@ -547,18 +547,36 @@ h1{
     transform: translate(-35%,22%);
     text-align: center;
     width: 200px;
-    top: 22%;
-    left: 45%;
+    top: 32%;
+    left: 32%;
     z-index: 300;
+    rotate: -90deg;
+    animation: crot 20s ease-in-out;
+    animation-iteration-count: infinite;
+    transition-duration: 200ms;
+}
+#telochromo1:hover{
+    width: 220px;
+
+}
+#telochromo2:hover{
+    width: 220px;
+
 }
 #telochromo2{
     position: absolute;
     transform: translate(-35%,22%);
     text-align: center;
     width: 200px;
-    top: 22%;
-    left: 45%;
+    top: 32%;
+    left: 32%;
+    rotate: -90deg;
+
     z-index: 200;
+    animation: crot 30s ease-in-out;
+    animation-iteration-count: infinite;
+    transition-duration: 200ms;
+
 }
 
 h2{
