@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed&display=swap');
 
 body,html{
+    font-family: 'Sofia Sans Semi Condensed',sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ECE8DD;
@@ -11,7 +12,7 @@ h1{
     font-size: 50px;
     left: 30px;
     font-family: 'Sofia Sans Semi Condensed', sans-serif;
-    position: absolute;
+    position: abs*olute;
 }
 
 #cell{
@@ -126,7 +127,6 @@ h1{
     user-select: none;
     width: 250px;
     animation: wobble 20s ease-in-out;
-/*     animation: crot 20s ease-in-out; */
     animation-iteration-count: infinite;
     transition: 0.2s;
 }  
@@ -139,7 +139,6 @@ h1{
     user-select: none;
     width: 250px;
     animation: wobble 20s ease-in-out;
-/*     animation: crot 20s ease-in-out; */
     animation-iteration-count: infinite;
     transition: 0.2s;
 }
@@ -426,6 +425,7 @@ h1{
 }
 
 #desc-con{
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
     width: 100px;
     height: 200px;
     position: absolute;
@@ -441,8 +441,8 @@ h1{
     margin-right: 500px;
     position: relative;
     border: 2px solid black;
-    background: #D9ACEE;
-    background: radial-gradient(circle, rgba(160,184,255,1) 0%, rgba(114,122,151,1) 100%);
+    background: rgb(163,188,215);
+    background: linear-gradient(90deg, rgba(163,188,215,1) 0%, rgba(138,151,193,1) 100%);
     border-radius: 10px;
     text-align: center;
     width: 500px;
